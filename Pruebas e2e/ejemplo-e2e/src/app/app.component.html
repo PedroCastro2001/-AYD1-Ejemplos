@@ -1,0 +1,103 @@
+<div class="container">
+  <h2 class="text-center mb-4">Agregar Película</h2>
+  <form>
+    <div class="mb-3">
+      <div class="attribute-title">Nombre</div>
+      <input name="nombre" type="text" class="form-control" id="nombre" required>
+    </div>
+    <div class="mb-3">
+      <div class="attribute-title">Categoría</div>
+      <select class="form-select" name="categoria" id="categoria" required>
+        <option value="" style="display: none;">Selecciona una categoría</option>
+        <option value="1">A</option>
+        <option value="2">B</option>
+        <option value="3">B15</option>
+        <option value="4">C</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <div class="attribute-title">Género</div>
+      <select class="form-control genero-select" name="Genero" required>
+        <option value="" style="display: none">Selecciona un género</option>
+        <option value="1">Acción</option>
+        <option value="2">Terror</option>
+        <option value="3">Suspenso</option>
+        <option value="4">Comedia</option>
+        <option value="5">Drama</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <div class="attribute-title">Horario</div>
+      <input type="time" name="Hora" class="form-control" id="horario" required>
+    </div>
+    <div class="mb-3">
+      <div class="attribute-title">Ubicación</div>
+      <select class="form-control ubicacion-select" name="ubicacion" required>
+        <option value="" style="display: none">Selecciona una zona</option>
+        <option value="1">Zona 1</option>
+        <option value="2">Zona 2</option>
+        <option value="3">Zona 3</option>
+        <option value="4">Zona 4</option>
+        <option value="5">Zona 5</option>
+        <option value="6">Zona 6</option>
+        <option value="7">Zona 7</option>
+        <option value="8">Zona 8</option>
+        <option value="9">Zona 9</option>
+        <option value="10">Zona 10</option>
+      </select>
+      <select class="form-control ubicacion-select" name="ubicacion" required>
+        <option value="" style="display: none">Selecciona una zona</option>
+        <option value="1">Zona 1</option>
+        <option value="2">Zona 2</option>
+        <option value="3">Zona 3</option>
+        <option value="4">Zona 4</option>
+        <option value="5">Zona 5</option>
+        <option value="6">Zona 6</option>
+        <option value="7">Zona 7</option>
+        <option value="8">Zona 8</option>
+        <option value="9">Zona 9</option>
+        <option value="10">Zona 10</option>
+      </select>
+      <select class="form-control ubicacion-select" name="ubicacion" required>
+        <option value="" style="display: none">Selecciona una zona</option>
+        <option value="1">Zona 1</option>
+        <option value="2">Zona 2</option>
+        <option value="3">Zona 3</option>
+        <option value="4">Zona 4</option>
+        <option value="5">Zona 5</option>
+        <option value="6">Zona 6</option>
+        <option value="7">Zona 7</option>
+        <option value="8">Zona 8</option>
+        <option value="9">Zona 9</option>
+        <option value="10">Zona 10</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <div class="attribute-title">Imágen</div>
+      <input type="file" class="form-control" name="imagen" id="imagen" accept="image/*" (change)="mostrarImagen($event)">
+      <img *ngIf="imagenPreview" [src]="imagenPreview" alt="Vista previa de la imagen" style="max-width: 100%; margin-top: 10px;">
+    </div>      
+    <div class="mb-3">
+      <div class="attribute-title">Tipo</div>
+      <select class="form-select tipo-select" id="tipo" required>
+        <option value="" style="display: none">Selecciona una tipo</option>
+        <option value="Normal">Normal</option>
+        <option value="1">3D</option>
+        <option value="2">4D</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <div class="attribute-title">Duración (minutos)</div>
+      <input type="number" name="duracion" class="form-control" id="duracion" required>
+    </div>
+    <div class="mb-3">
+      <div class="attribute-title">Descripción</div>
+      <textarea class="form-control" name="descripcion" id="descripcion" rows="4" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Agregar Película</button>
+  </form>
+
+  <!-- Enlace al tipo de fuente 'Open Sans Condensed' -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    
+</div>
