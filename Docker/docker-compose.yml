@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+   server1:
+       image: dockerhubuser/api-node
+       container_name: node_container
+       ports:
+         - "3000:3000"
+
+   server2:
+       image: dockerhubuser/api-python
+       container_name: python_container
+       ports:
+         - "5000:5000"
